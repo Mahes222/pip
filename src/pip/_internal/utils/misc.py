@@ -72,6 +72,7 @@ def get_pip_version() -> str:
     pip_pkg_dir = os.path.abspath(pip_pkg_dir)
 
     return f"pip {__version__} from {pip_pkg_dir} (python {get_major_minor_version()})"
+    get_major_minor_version()
 
 
 def normalize_version_info(py_version_info: tuple[int, ...]) -> tuple[int, int, int]:
